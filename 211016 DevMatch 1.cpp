@@ -10,9 +10,7 @@ string solution(vector<string> registered_list, string new_id) {
     
     int length = new_id.size(), n=0, slen=0;
     for (int i = 0; i < length; ++i) {
-        if ('0' <= new_id[i] && new_id[i] <= '9') {
-            n *= 10, n += (new_id[i] - '0');
-        }
+        if ('0' <= new_id[i] && new_id[i] <= '9') { n *= 10, n += (new_id[i] - '0'); }
         else slen++;
     }
 
